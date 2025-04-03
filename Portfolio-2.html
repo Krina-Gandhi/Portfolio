@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krina Gandhi | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="fade-in">Krina Gandhi</h1>
+        <p class="fade-in">Front-End Web Developer</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about" class="slide-in">
+        <h2>About Me</h2>
+        <p>Master's student in Information Technology with experience in front-end web development. Skilled in WordPress, Shopify, and modern web technologies.</p>
+    </section>
+    
+    <section id="skills" class="slide-in">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>HTML5, CSS3, SCSS</li>
+            <li>JavaScript, jQuery, Bootstrap</li>
+            <li>PHP, JSON</li>
+            <li>WordPress, Shopify, PrestaShop</li>
+            <li>SEO Optimization</li>
+        </ul>
+    </section>
+    
+    <section id="experience" class="slide-in">
+        <h2>Professional Experience</h2>
+        <p><strong>YouROK Corp. - Front-End Developer Intern</strong> (May 2024 - July 2024)</p>
+        <p>Updated WordPress website, designed responsive layouts, and integrated plugins.</p>
+        
+        <p><strong>Ridgebrains Technology - Senior Web Developer</strong> (April 2022 - June 2023)</p>
+        <p>Developed e-commerce websites using Shopify and PrestaShop, customized WordPress themes.</p>
+    </section>
+    
+    <section id="projects" class="slide-in">
+        <h2>Projects</h2>
+        <ul>
+            <li><a href="https://www.expora.in/" target="_blank">Expora</a></li>
+            <li><a href="https://tinyurl.com/4yrmkm62" target="_blank">Project 2</a></li>
+            <li><a href="https://tinyurl.com/ye6t6fvp" target="_blank">Project 3</a></li>
+        </ul>
+    </section>
+    
+    <section id="contact" class="slide-in">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:krinagandhiprofessional@gmail.com">krinagandhiprofessional@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/krina-gandhi-768496135/" target="_blank">Krina Gandhi</a></p>
+    </section>
+
+    <style>
+        /* Body and basic layout */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f1f5f8;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 50px 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+        
+        header h1 {
+            font-size: 3em;
+            animation: fadeIn 1.5s ease-in forwards;
+        }
+        
+        header p {
+            font-size: 1.2em;
+            animation: fadeIn 2s ease-in forwards;
+            animation-delay: 0.5s;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #f1c40f;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            color: #ecf0f1;
+        }
+
+        /* Section styles */
+        section {
+            margin: 50px auto;
+            padding: 30px;
+            width: 80%;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+
+        section h2 {
+            color: #2c3e50;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        section ul li {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        section ul li a {
+            color: #2c3e50;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        section ul li a:hover {
+            color: #f1c40f;
+        }
+
+        /* Animation for fade-in */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Animation for sliding-in */
+        @keyframes slideIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .slide-in {
+            animation: slideIn 1s ease-out forwards;
+        }
+        
+        /* Contact section and footer */
+        #contact {
+            background-color: #34495e;
+            color: white;
+            padding: 40px 0;
+        }
+
+        #contact a {
+            color: #f1c40f;
+            text-decoration: none;
+        }
+        
+        #contact a:hover {
+            color: #ecf0f1;
+        }
+    </style>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const sections = document.querySelectorAll(".slide-in");
+            sections.forEach(section => {
+                section.style.opacity = "1";
+                section.style.transform = "translateY(0)";
+            });
+        });
+    </script>
+</body>
+</html>
