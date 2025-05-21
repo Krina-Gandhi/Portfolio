@@ -140,38 +140,6 @@
             </div>
         </section>
 
-        <section id="recommendations" class="recommendation-section">
-            <h2>💬 LinkedIn Recommendations</h2>
-            <div class="slider">
-                <div class="slides">
-                  <div class="slide active">
-                    <blockquote>
-                      <p>“Krina's attention to front-end details helped us revamp our UI in record time.”</p>
-                      <footer>— Jane Smith, Project Manager at TechCorp</footer>
-                    </blockquote>
-                  </div>
-                  <div class="slide">
-                    <blockquote>
-                      <p>“Professional, reliable, and incredibly talented. Krina delivers on every project.”</p>
-                      <footer>— Rahul Patel, Lead Developer at Webify</footer>
-                    </blockquote>
-                  </div>
-                  <div class="slide">
-                    <blockquote>
-                      <p>“Working with Krina was a pleasure—her e-commerce knowledge is top-notch.”</p>
-                      <footer>— Melissa Green, E-commerce Consultant</footer>
-                    </blockquote>
-                  </div>
-                </div>
-                <button class="prev" onclick="moveSlide(-1)">❮</button>
-                <button class="next" onclick="moveSlide(1)">❯</button>
-            </div>
-            <a href="https://www.linkedin.com/in/krina-gandhi-768496135/details/recommendations/" target="_blank" class="btn">
-                View All on LinkedIn
-            </a>
-        </section>
-
-
         <section id="contact">
             <h2 class="text-xl font-semibold border-b pb-2 mb-4">Contact</h2>
             <p class="mb-1">Phone: +1 (401) 422-8915</p>
@@ -217,29 +185,6 @@
         scrollTopBtn.addEventListener('click', function () {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
-
-
-        // Recomendation Slider
-
-        let current = 0;
-        const slides = document.querySelectorAll('.slide');
-
-        function showSlide(index) {
-            slides.forEach((slide, i) => {
-              slide.classList.remove('active');
-              if (i === index) {
-                slide.classList.add('active');
-              }
-            });
-        }
-
-        function moveSlide(step) {
-            current = (current + step + slides.length) % slides.length;
-            showSlide(current);
-        }
-
-        // Optional: auto-slide
-        setInterval(() => moveSlide(1), 10000);
 
     </script>
 </body>
